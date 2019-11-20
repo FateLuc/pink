@@ -18,7 +18,7 @@ if (isset($_GET['y'])) {
 </head>
 <body>
 <?php
-$z = $x * $y;
+$z = $x + $y;
 ?>
 <form>
     <input type="number" name="x"> <input type="number" name="y"> <input type="submit">
