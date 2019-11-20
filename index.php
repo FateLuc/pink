@@ -1,8 +1,12 @@
 <?php
+<<<<<<< HEAD
 $name ="";
 if(isset($_GET['name'])) {
     $name = $_GET['name'];
 }
+=======
+$name = "Tim";
+>>>>>>> 6de79e7baf2e6939424dfecf5058c2df783799f8
 ?>
 
 <html>
