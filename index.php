@@ -1,26 +1,33 @@
 <?php
 
-$name ="";
-if(isset($_GET['name'])) {
-    $name = $_GET['name'];
+$x = 0;
+$y = 0;
+if (isset($_GET['x'])) {
+    $x = $_GET['x'];
 }
+$y = "";
+if (isset($_GET['y'])) {
+    $y = $_GET['y'];
+}
+
 ?>
 
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body> <?php echo "<h1>Hallo " . $name . "</h1>";
+<body>
+<?php
+$z = $x * $y;
 ?>
-<p1>
-    <?php
-        echo "Ihr Name:";
-    ?>
-</p1>
-    <form>
-        <input type="text" name="name">
-        <input type="submit">
-    </form>
+<form>
+    <input type="number" name="x"> <input type="number" name="y"> <input type="submit">
+
+</form>
+
+<?php
+echo $z
+?>
 
 </body>
 </html>
